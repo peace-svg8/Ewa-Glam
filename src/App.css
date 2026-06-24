@@ -524,11 +524,16 @@ a {
     height: 50vh;
   }
   .header.new-header {
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: var(--spacing-md);
   }
   .new-header .header-logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .header-nav {
     display: none;
