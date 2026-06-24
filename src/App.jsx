@@ -63,7 +63,7 @@ function App() {
           <div className="section-subtitle">Our Expertise</div>
           <h2 className="section-title">Makeup Services</h2>
         </div>
-        <div className="photo-category-grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'}}>
+        <div className="photo-category-grid">
           {[
             {name: 'Bridal Glam', price: 'Starting at ₦150,000', image: '/cat_face.png'},
             {name: 'Studio & Editorial', price: 'Starting at ₦40,000', image: '/cat_eyes.png'},
@@ -86,7 +86,7 @@ function App() {
           <div className="section-subtitle">Professional Quality</div>
           <h2 className="section-title">Shop Premium Tools</h2>
         </div>
-        <div className="product-grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', maxWidth: '800px'}}>
+        <div className="product-grid" style={{maxWidth: '800px'}}>
           {[
             {name: 'Pro 15-Piece Brush Set', price: '₦45,000', img: '/cat_skin.png'},
             {name: 'Flawless Blending Sponge', price: '₦8,500', img: '/thumb1.png'}
