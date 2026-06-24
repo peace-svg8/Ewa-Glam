@@ -70,7 +70,7 @@ function App() {
             {name: 'Event & Party', price: 'Starting at ₦50,000', image: '/cat_lips.png'}
           ].map((srv) => (
             <div className="photo-category-item" key={srv.name}>
-              <img src={srv.image} alt={srv.name} className="photo-category-img" />
+              <img src={srv.image} alt={srv.name} className="photo-category-img" loading="lazy" />
               <div className="photo-category-overlay">
                 <h3>{srv.name}</h3>
                 <p style={{fontSize: '0.9rem', color: '#eee', margin: '5px 0', letterSpacing: '1px'}}>{srv.price}</p>
@@ -138,7 +138,7 @@ function App() {
       <section className="founder-section" id="founder">
         <div className="founder-container">
           <div className="founder-image-wrapper">
-             <img src="/founder.png" alt="Founder" className="founder-image" />
+             <img src="/founder.png" alt="Founder" className="founder-image" loading="lazy" />
           </div>
           <div className="founder-content">
             <div className="section-subtitle">Meet The Founder</div>
