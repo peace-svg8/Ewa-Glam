@@ -41,7 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', var(--font-family);
+  font-family: 'Playfair Display', var(--font-family);
   font-weight: 600;
   line-height: 1.2;
 }

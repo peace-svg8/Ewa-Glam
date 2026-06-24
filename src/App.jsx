@@ -20,14 +20,6 @@ function App() {
           <a href="#about">Our Story</a>
           <a href="#faq">FAQ</a>
         </nav>
-        <div className="header-actions">
-          <button style={{color: 'var(--text-dark)', display: 'flex', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer'}}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </button>
-          <a href={serviceLink} target="_blank" rel="noopener noreferrer" style={{color: 'var(--text-dark)', display: 'flex', alignItems: 'center'}}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-          </a>
-        </div>
       </header>
 
       <section className="hero-split">
@@ -193,6 +185,10 @@ function App() {
           &copy; {new Date().getFullYear()} Ewa Beauty Nigeria. All rights reserved.
         </div>
       </footer>
+
+      <a href={serviceLink} target="_blank" rel="noopener noreferrer" className="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#ffffff" stroke="none"><path d="M12.031 2C6.48 2 2 6.48 2 12.031c0 1.763.46 3.486 1.332 5.006L2 22l5.12-1.316a10.02 10.02 0 004.911 1.285h.004c5.55 0 10.03-4.481 10.03-10.034C22.065 6.484 17.585 2 12.031 2zm5.578 14.51c-.24.676-1.378 1.306-1.921 1.365-.515.056-1.157.17-3.3-1.025-2.617-1.455-4.298-4.148-4.428-4.321-.13-.173-1.056-1.405-1.056-2.678 0-1.272.664-1.897.896-2.14.232-.243.504-.303.673-.303.169 0 .338.006.49.014.161.008.375-.064.587.447.225.542.748 1.83.815 1.966.068.135.113.293.028.463-.085.17-.129.275-.258.423-.13.148-.27.319-.387.45-.125.14-.26.29-.112.544.148.254.658 1.084 1.411 1.751.97.862 1.787 1.132 2.043 1.25.256.118.406.1.558-.06.152-.16.657-.76.833-1.02.176-.26.353-.217.588-.128.235.089 1.488.702 1.744.83.256.128.426.192.489.298.063.106.063.614-.177 1.29z"/></svg>
+      </a>
     </>
   )
 }

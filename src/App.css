@@ -55,10 +55,10 @@ a {
 
 .new-header .header-logo {
   justify-self: start;
-  font-family: 'Outfit', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
   color: var(--primary);
 }
 
@@ -503,6 +503,28 @@ a {
   font-size: 0.8rem;
 }
 
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+}
+
 /* Mobile Responsive */
 @media (max-width: 900px) {
   .hero-split {
@@ -534,6 +556,7 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
   }
   .header-nav {
     display: none;
