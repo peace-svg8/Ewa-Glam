@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
   const whatsappNumber = "2348168233259";
   const whatsappServiceMsg = encodeURIComponent("Hi Ewa Beauty, I would like to book a makeup service.");
   const whatsappShopMsg = encodeURIComponent("Hi Ewa Beauty, I would like to purchase some makeup tools.");
@@ -15,12 +19,19 @@ function App() {
         <div className="header-logo">
           <img src="/logo.png" alt="Ewa Beauty" className="logo-img" fetchpriority="high" />
         </div>
-        <nav className="header-nav">
-          <a href="#">Home</a>
-          <a href="#services">Services</a>
-          <a href="#shop">Shop</a>
-          <a href="#about">Our Story</a>
-          <a href="#faq">FAQ</a>
+
+        <button className={`mobile-menu-btn ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu} aria-label="Toggle menu">
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+
+        <nav className={`header-nav ${isMobileMenuOpen ? 'is-open' : ''}`}>
+          <a href="#" onClick={closeMobileMenu}>Home</a>
+          <a href="#services" onClick={closeMobileMenu}>Services</a>
+          <a href="#shop" onClick={closeMobileMenu}>Shop</a>
+          <a href="#about" onClick={closeMobileMenu}>Our Story</a>
+          <a href="#faq" onClick={closeMobileMenu}>FAQ</a>
         </nav>
       </header>
 
