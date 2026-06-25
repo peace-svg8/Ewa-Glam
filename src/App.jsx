@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <header className="header new-header">
-        <div className="header-logo">Ewa Beauty</div>
+        <div className="header-logo">
+          <img src="/logo.png" alt="Ewa Beauty" className="logo-img" />
+        </div>
         <nav className="header-nav">
           <a href="#">Home</a>
           <a href="#services">Services</a>
