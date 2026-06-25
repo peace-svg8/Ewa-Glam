@@ -13,7 +13,7 @@ function App() {
     <>
       <header className="header new-header">
         <div className="header-logo">
-          <img src="/logo.png" alt="Ewa Beauty" className="logo-img" />
+          <img src="/logo.png" alt="Ewa Beauty" className="logo-img" fetchpriority="high" />
         </div>
         <nav className="header-nav">
           <a href="#">Home</a>
@@ -29,19 +29,24 @@ function App() {
           <div className="hero-overline">Premium Beauty</div>
           <h1 className="hero-headline">Flawless Glam Services & Premium Beauty Tools.</h1>
           
+          <div className="hero-description">
+            Whether you are sitting in our chair for a flawless bridal glam or upgrading your kit with our luxury brushes, we are dedicated to celebrating your natural radiance.
+          </div>
+
           <div className="hero-button-group" style={{display: 'flex', gap: '15px', marginBottom: 'var(--spacing-lg)'}}>
             <a href={serviceLink} target="_blank" rel="noopener noreferrer" className="btn-pill">
               Book a Service
             </a>
-            <a href={shopLink} target="_blank" rel="noopener noreferrer" className="btn-pill outline">
+            <a href="#shop" className="btn-pill outline">
               Shop Tools
             </a>
           </div>
           
-          <div className="hero-description">
-            Whether you are sitting in our chair for a flawless bridal glam or upgrading your kit with our luxury brushes, we are dedicated to celebrating your natural radiance.
+          <div className="social-proof" style={{marginBottom: '12px'}}>
+            <span style={{color: 'var(--secondary)', fontSize: '1.2rem', marginRight: '8px'}}>★★★★★</span>
+            <span style={{fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '500', letterSpacing: '0.5px'}}>Loved by 500+ happy clients</span>
           </div>
-          
+
           <div className="hero-thumbnails">
             <img src="/cat_face.png" alt="Service Thumbnail" />
             <img src="/cat_eyes.png" alt="Tool Thumbnail" />
