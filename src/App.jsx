@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 
 function App() {
-  const whatsappNumber = "+2348000000000"; // Placeholder
+  const whatsappNumber = "2348168233259";
   const whatsappServiceMsg = encodeURIComponent("Hi Ewa Beauty, I would like to book a makeup service.");
   const whatsappShopMsg = encodeURIComponent("Hi Ewa Beauty, I would like to purchase some makeup tools.");
   
@@ -57,16 +57,16 @@ function App() {
         </div>
         <div className="photo-category-grid">
           {[
-            {name: 'Bridal Glam', price: 'Starting at ₦150,000', image: '/cat_face.png'},
-            {name: 'Studio & Editorial', price: 'Starting at ₦40,000', image: '/cat_eyes.png'},
-            {name: 'Event & Party', price: 'Starting at ₦50,000', image: '/cat_lips.png'}
+            {name: 'Bridal Glam', price: 'Starting at ₦150,000', image: '/bridal_glam.jpg'},
+            {name: 'Studio & Editorial', price: 'Starting at ₦40,000', image: '/studio_glam.jpg'},
+            {name: 'Event & Party', price: 'Starting at ₦50,000', image: '/event_glam.jpg'}
           ].map((srv) => (
             <div className="photo-category-item" key={srv.name}>
               <img src={srv.image} alt={srv.name} className="photo-category-img" loading="lazy" />
               <div className="photo-category-overlay">
                 <h3>{srv.name}</h3>
                 <p style={{fontSize: '0.9rem', color: '#eee', margin: '5px 0', letterSpacing: '1px'}}>{srv.price}</p>
-                <a href={serviceLink} className="btn-pill" style={{marginTop: '15px', padding: '10px 20px', fontSize: '0.9rem'}}>Book Now</a>
+                <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hi Ewa Beauty, I would like to book the ' + srv.name + ' service.')}`} target="_blank" rel="noopener noreferrer" className="btn-pill light-outline" style={{marginTop: '15px', padding: '10px 20px', fontSize: '0.9rem'}}>Book Now</a>
               </div>
             </div>
           ))}

@@ -149,6 +149,17 @@ a {
   color: #fff;
 }
 
+.btn-pill.light-outline {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-pill.light-outline:hover {
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
 .hero-description {
   font-size: 0.95rem;
   color: var(--text-light);
