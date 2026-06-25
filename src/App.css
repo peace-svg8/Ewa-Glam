@@ -44,7 +44,7 @@ a {
 
 /* Header */
 .header.new-header {
-  position: relative;
+  position: sticky;
   top: 0;
   color: var(--text-dark);
   padding: var(--spacing-sm) var(--spacing-xl);
